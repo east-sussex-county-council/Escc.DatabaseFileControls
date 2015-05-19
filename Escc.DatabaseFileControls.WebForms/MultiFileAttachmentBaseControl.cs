@@ -1,4 +1,5 @@
 #region Using Directives
+
 using System;
 using System.ComponentModel;
 using System.Configuration;
@@ -10,9 +11,10 @@ using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using Escc.FormControls.WebForms;
-using EsccWebTeam.Data.Ado;
+using Escc.Data.Ado;
 using Escc.FormControls.WebForms.Validators;
 using EsccWebTeam.NavigationControls;
+
 #endregion
 
 // --------------------------------------------------------------------------------------------
@@ -44,7 +46,7 @@ using EsccWebTeam.NavigationControls;
 //   * Hides or shows the div tag control that surrounds the display of the file.
 //
 // --------------------------------------------------------------------------------------------
-namespace EsccWebTeam.DatabaseFileControls
+namespace Escc.DatabaseFileControls.WebForms
 {
     /// <summary>
     /// A control that allows the user to browse for files one at a time and build up a list. The control has buttons for adding a file to the list
@@ -101,8 +103,32 @@ namespace EsccWebTeam.DatabaseFileControls
         #endregion
 
         #region Configuration
-        protected static NameValueCollection fileConfig = ConfigurationManager.GetSection("EsccWebTeam.DatabaseFileControls/FileAttachmentSettings") as NameValueCollection;
-        protected static NameValueCollection imageConfig = ConfigurationManager.GetSection("EsccWebTeam.DatabaseFileControls/ImageSettings") as NameValueCollection;
+
+        private static NameValueCollection fileConfig = FileConfig();
+        private static NameValueCollection imageConfig = ImageConfig();
+
+        /// <summary>
+        /// Gets the configuration settings from the FileAttachmentSettings section
+        /// </summary>
+        /// <returns></returns>
+        protected static NameValueCollection FileConfig()
+        {
+            var config = ConfigurationManager.GetSection("Escc.DatabaseFileControls/FileAttachmentSettings") as NameValueCollection;
+            if (config == null) config = ConfigurationManager.GetSection("EsccWebTeam.DatabaseFileControls/FileAttachmentSettings") as NameValueCollection;
+            return config;
+        }
+
+        /// <summary>
+        /// Gets the configuration settings from the ImageSettings section
+        /// </summary>
+        /// <returns></returns>
+        protected static NameValueCollection ImageConfig()
+        {
+            var config = ConfigurationManager.GetSection("Escc.DatabaseFileControls/ImageSettings") as NameValueCollection;
+            if (config == null) config = ConfigurationManager.GetSection("EsccWebTeam.DatabaseFileControls/ImageSettings") as NameValueCollection;
+            return config;
+        }
+
         #endregion
 
 

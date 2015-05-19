@@ -1,10 +1,10 @@
 #region Using Directives
-using System;
-using System.Web.UI.HtmlControls;
+
 using Escc.FormControls.WebForms.Validators;
+
 #endregion
 
-namespace EsccWebTeam.DatabaseFileControls
+namespace Escc.DatabaseFileControls.WebForms
 {
     /// <summary>
     /// Validates the count of files being attached to a MultiFileAttachmentBaseControl control

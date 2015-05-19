@@ -1,8 +1,4 @@
-#region Using Directives
-using System;
-#endregion
-
-namespace EsccWebTeam.DatabaseFileControls
+namespace Escc.DatabaseFileControls.WebForms
 {
 	/// <summary>
 	/// Specifies the various file attachment types we need to differentiate.

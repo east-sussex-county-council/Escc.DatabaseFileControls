@@ -1,10 +1,8 @@
-﻿#region Using Directives
-using System;
+﻿using System;
 using System.Web;
-using EsccWebTeam.Data.Ado;
-#endregion
+using Escc.Data.Ado;
 
-namespace EsccWebTeam.DatabaseFileControls
+namespace Escc.DatabaseFileControls.WebForms
 {
     /// <summary>
     /// Enables a file attachment to be displayed on a web page directly from database storage (whether an image or a document).

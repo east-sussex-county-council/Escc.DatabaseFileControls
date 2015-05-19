@@ -2,16 +2,17 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security;
+using System.Resources;
 
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("EsccWebTeam.DatabaseFileControls")]
-[assembly: AssemblyDescription("Library for working with files stored in databases")]
+[assembly: AssemblyTitle("Escc.DatabaseFileControls.WebForms")]
+[assembly: AssemblyDescription("A library for working with files stored in databases in ASP.NET WebForms applications")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("East Sussex County Council")]
-[assembly: AssemblyProduct("EsccWebTeam.DatabaseFileControls")]
+[assembly: AssemblyProduct("Escc.DatabaseFileControls.WebForms")]
 [assembly: AssemblyCopyright("Copyright © East Sussex County Council 2010")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -39,3 +40,4 @@ using System.Security;
 [assembly: AllowPartiallyTrustedCallersAttribute]
 
 [assembly: System.CLSCompliant(true)]
+[assembly: NeutralResourcesLanguageAttribute("en-GB")]
