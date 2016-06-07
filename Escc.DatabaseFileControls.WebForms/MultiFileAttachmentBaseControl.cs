@@ -13,7 +13,7 @@ using System.Web.UI.WebControls;
 using Escc.FormControls.WebForms;
 using Escc.Data.Ado;
 using Escc.FormControls.WebForms.Validators;
-using EsccWebTeam.NavigationControls;
+using Escc.NavigationControls.WebForms;
 
 #endregion
 
