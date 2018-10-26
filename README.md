@@ -71,5 +71,3 @@ Example `web.config`:
 	  </EsccWebTeam.NavigationControls>
 
 	</configuration>
-
-It is published as a NuGet package using [NuBuild](https://github.com/bspell1/NuBuild).
