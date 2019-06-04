@@ -53,8 +53,8 @@
     <Reference Include="Escc.AddressAndPersonalDetails, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.AddressAndPersonalDetails.5.0.0\lib\netstandard2.0\Escc.AddressAndPersonalDetails.dll</HintPath>
     </Reference>
-    <Reference Include="Escc.Data.Ado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.Data.Ado.2.0.0\lib\Escc.Data.Ado.dll</HintPath>
+    <Reference Include="Escc.Data.Ado, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Escc.Data.Ado.3.0.0\lib\net35\Escc.Data.Ado.dll</HintPath>
     </Reference>
     <Reference Include="Escc.FormControls.WebForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.FormControls.WebForms.5.0.0\lib\Escc.FormControls.WebForms.dll</HintPath>
